@@ -59,6 +59,12 @@ function Header() {
                                     Vehicles
                                 </li>
                             </Link>
+                            <Link to="/parcels">
+                                <li>
+                                    <i className="fa-solid fa-box"></i> 
+                                    Parcels
+                                </li>
+                            </Link>
                             <a>
                                 <li>
                                     <i className="fa-solid fa-store"></i>
