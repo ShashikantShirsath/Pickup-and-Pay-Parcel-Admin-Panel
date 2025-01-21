@@ -1,6 +1,6 @@
 import React from "react";
-import './Partner.css'
-    
+// import './Partner.css'
+
 function PartnerTable() {
     return (
         <>  <div class="table-header">Partners Table</div>

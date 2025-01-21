@@ -1,5 +1,5 @@
 import React from "react";
-import 'C:/Users/pshir/Documents/Paarsh Infotech/Work/my-app/src/App.css';
+// import 'C:/Users/pshir/Documents/Paarsh Infotech/Work/my-app/src/App.css';
 
 function VehicleTable() {
     return (
