@@ -1,9 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import 'C:/Users/pshir/Documents/Paarsh Infotech/Work/my-app/src/App.css';
 
 function UserTable() {
     return (
-        <>  <div class="table-header">Users Table</div>
+        <>
+            <div class="add-user">
+                <Link to={"/user/addUser"}>
+                    <button class="add-btn" style={{ width: "130px" }}>Add User</button>
+                </Link>
+            </div>
+            <div class="table-header">Users Table</div>
             <div class="table-container">
                 <table>
                     <thead>
@@ -33,8 +40,14 @@ function UserTable() {
                                 23/04/18
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                                <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -54,8 +67,14 @@ function UserTable() {
                                 11/01/19
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -75,8 +94,14 @@ function UserTable() {
                                 19/09/17
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -96,8 +121,14 @@ function UserTable() {
                                 24/12/08
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -117,8 +148,14 @@ function UserTable() {
                                 04/10/21
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>

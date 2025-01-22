@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.png';
-// import 'C:/Users/pshir/Documents/Paarsh Infotech/Work/my-app/src/App.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import logo from "./logo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
+    // State to track the active button
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const handleButtonClick = (index) => {
+        setActiveIndex(index); // Update the active button index
+    };
+
     return (
         <>
             <div className="btn_one">
-                <label for="check">
+                <label htmlFor="check">
                     <div className="header">
                         <ul>
                             <li><i className="fa-solid fa-bars"></i></li>
-                            <li style={{ float: "right", marginRight: "10px" }}><a href="#" style={{ fontWeight: "500" }}>Profile</a></li>
-                            <a href="#"><li style={{ float: "right" }}><img src={logo} style={{ height: "40px", marginTop: "7px" }} /></li></a>
+                            <li style={{ float: "right", marginRight: "10px" }}>
+                                <a href="#" style={{ fontWeight: "500" }}>Profile</a>
+                            </li>
+                            <a href="#">
+                                <li style={{ float: "right" }}>
+                                    <img src={logo} style={{ height: "40px", marginTop: "7px" }} alt="Logo" />
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </label>
             </div>
 
-            <div class="main_box">
+            <div className="main_box">
                 <input type="checkbox" id="check" />
 
                 <div className="sidebar_menu">
@@ -27,56 +39,61 @@ function Header() {
                     </div>
 
                     <div className="btn_two">
-                        <label for="check">
+                        <label htmlFor="check">
                             <i className="fa-solid fa-xmark"></i>
                         </label>
                     </div>
 
                     <div className="menu">
-                        <ul>
-                            <a>
-                                <li>
-                                    <i className="fa-solid fa-image"></i>
+                        <ul className="myDiv">
+                            <Link onClick={() => handleButtonClick(0)}>
+                                <li className={`side-btn ${activeIndex === 0 ? "active" : ""}`}>
+                                    <i className="fa-solid fa-chart-line"></i>
                                     Dashboard
                                 </li>
-                            </a>
+                            </Link>
 
-                            <Link to="/user">
-                                <li>
-                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                            <Link to="/user" onClick={() => handleButtonClick(1)}>
+                                <li className={`side-btn ${activeIndex === 1 ? "active" : ""}`}>
+                                    <i className="fa-solid fa-user-group"></i>
                                     Users
                                 </li>
                             </Link>
-                            <Link to="/partner">
-                                <li>
-                                    <i className="fa-solid fa-photo-film"></i>
+
+                            <Link to="/partner" onClick={() => handleButtonClick(2)}>
+                                <li className={`side-btn ${activeIndex === 2 ? "active" : ""}`}>
+                                    <i className="fa-regular fa-handshake"></i>
                                     Partner
                                 </li>
                             </Link>
-                            <Link to="/vehicle">
-                                <li>
-                                    <i className="fa-solid fa-calendar-days"></i>
+
+                            <Link to="/vehicle" onClick={() => handleButtonClick(3)}>
+                                <li className={`side-btn ${activeIndex === 3 ? "active" : ""}`}>
+                                    <i className="fa-solid fa-car"></i>
                                     Vehicles
                                 </li>
                             </Link>
-                            <Link to="/parcels">
-                                <li>
+
+                            <Link to="/parcels" onClick={() => handleButtonClick(4)}>
+                                <li className={`side-btn ${activeIndex === 4 ? "active" : ""}`}>
                                     <i className="fa-solid fa-box"></i> 
                                     Parcels
                                 </li>
                             </Link>
-                            <a>
-                                <li>
-                                    <i className="fa-solid fa-store"></i>
+
+                            <Link onClick={() => handleButtonClick(5)}>
+                                <li className={`side-btn ${activeIndex === 5 ? "active" : ""}`}>
+                                    <i className="fa-solid fa-user-large"></i>
                                     Profile
                                 </li>
-                            </a>
-                            <a>
-                                <li>
-                                    <i className="fa-solid fa-phone"></i>
+                            </Link>
+
+                            <Link onClick={() => handleButtonClick(6)}>
+                                <li className={`side-btn ${activeIndex === 6 ? "active" : ""}`}>
+                                    <i className="fa-solid fa-right-from-bracket"></i>
                                     Logout
                                 </li>
-                            </a>
+                            </Link>
                         </ul>
                     </div>
 
@@ -91,7 +108,7 @@ function Header() {
                 </div>
             </div>
         </>
-    )
-};
+    );
+}
 
 export default Header;
