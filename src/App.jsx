@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './MyComponents/Header/Header.jsx';
 import User from './MyComponents/User-Table/User.jsx';
 import Vehicle from './MyComponents/Vehicle/Vehicle.jsx';
+import AddUser from './MyComponents/User-Table/addUser.jsx';
+import EditUser from './MyComponents/User-Table/editUser.jsx';
 import Partner from './MyComponents/Partner/Partner.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -15,6 +17,8 @@ function App() {
             <Route path="/user" element={<User />} />
             <Route path='/vehicle' element={<Vehicle/>}></Route>
             <Route path='/partner' element={<Partner/>}></Route>
+            <Route path='/user/addUser' element={<AddUser/>}></Route>
+            <Route path='/user/editUser' element={<EditUser/>}></Route>
           </Routes>
         </div>
     </Router>
