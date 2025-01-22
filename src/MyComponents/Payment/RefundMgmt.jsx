@@ -43,7 +43,7 @@ const RefundDashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Refund Management</h1>
+      <h1>REFUND MANAGEMENT</h1>
       <div className="filter-container">
         <label htmlFor="paymentFilter">Filter by Payment Method:</label>
         <select

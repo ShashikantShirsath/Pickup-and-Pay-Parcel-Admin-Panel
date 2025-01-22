@@ -10,7 +10,8 @@ function UserTable() {
                     <button class="add-btn" style={{ width: "130px" }}>Add User</button>
                 </Link>
             </div>
-            <div class="table-header">Users Table</div>
+            <div className="tables-manage">
+            <h1 class="table-header">USER TABLE</h1>
             <div class="table-container">
                 <table>
                     <thead>
@@ -160,6 +161,7 @@ function UserTable() {
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
         </>
     )

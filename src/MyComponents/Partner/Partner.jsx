@@ -3,7 +3,9 @@ import React from "react";
 
 function PartnerTable() {
     return (
-        <>  <div class="table-header">Partners Table</div>
+        <>  
+        <div className="tables-manage">
+        <h1 class="table-header">PARTNER TABLE</h1>
             <div class="table-container">
                 <table>
                     <thead>
@@ -123,6 +125,7 @@ function PartnerTable() {
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
         </>
     )

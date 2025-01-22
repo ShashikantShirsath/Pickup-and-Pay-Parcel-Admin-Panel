@@ -22,7 +22,6 @@ function App() {
             <Route path='/user/addUser' element={<AddUser/>}></Route>
             <Route path='/user/editUser' element={<EditUser/>}></Route>
             <Route path='/payment' element={<RefundDashboard/>}></Route>
-            <Route path='/payment/refund/' element={<PickupParcelRefundForm/>}></Route>
           </Routes>
         </div>
     </Router>

@@ -12,18 +12,12 @@ body {
   background-color: #f5f5f5;
 }
 
-/* .main_box {
-  height: 100vh;
-  background-size: cover;
-} */
-
 .header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: #ffffff !important;
   overflow: hidden;
-  /* background-color: #ffffff; */
 }
 
 .header ul li {
@@ -74,7 +68,7 @@ body {
 .sidebar_menu .logo a {
   position: absolute;
   left: 27px;
-  /* color: black; */
+  color: black;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
@@ -107,7 +101,6 @@ body {
 }
 
 .sidebar_menu .menu li i,a {
-  color: black;
   text-decoration: none;
   font-size: 15px;
 }
@@ -132,14 +125,8 @@ body {
   display: none;
 }
 
-/* .sidebar_menu .menu li:hover {
-  background-color:#f5f5f5;
-  cursor: pointer;
-  border-radius: #f5f5f5;
-} */
-
 .menu .active, .MyDiv .side-btn a li:hover {
-  background-color: #666;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,172,187,1) 100%, rgba(0,212,255,1) 100%);
   color: white;
 }
 
@@ -160,10 +147,6 @@ body {
 }
 
 
-/* #check:checked ~ .btn_one i {
-  opacity: 0;
-} */
-
 #check:checked _ .sidebar_menu .btn_two i {
   opacity: 1;
 }
@@ -173,21 +156,18 @@ body {
 
 .table-container {
   max-width: 100%;
-  margin: 0 10px;
   background: #fff;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: auto;
 }
 
-.table-header {
-  background-image: linear-gradient(195deg, #42424a, #191919);
-  color: #fff;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 10px;
-  border-radius: .5rem .5rem 0 0;
+.tables-manage {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 4px 62px rgba(0, 0, 0, 0.1) !important;
 }
 
 table {
@@ -259,7 +239,7 @@ tr:hover {
 
 .add-btn {
   color: #fff;
-  background-color: #494747;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,172,187,1) 100%, rgba(0,212,255,1) 100%);
   padding: 10px 10px;
   border-radius: 20px;
   font-size: 1.2rem;
@@ -313,8 +293,7 @@ hr {
 
 /* dropdown */
 .dropbtn {
-  background-color: #42424a;
-  color: white;
+  background: linear-gradient(90deg, rgba(2,0,20,0.4221455718037749) 0%, rgba(68,191,45,0.7953649450231481) 0%, rgba(21,218,155,1) 74%, rgba(98,198,123,0.6728578225160257) 100%);  color: white;
   padding: 5px;
   width: 5rem;
   font-size: 16px;
@@ -354,6 +333,3 @@ hr {
   display: block;
 }
 
-/* .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-} */

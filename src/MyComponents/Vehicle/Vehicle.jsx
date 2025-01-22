@@ -3,7 +3,9 @@ import React from "react";
 
 function VehicleTable() {
     return (
-        <>  <div class="table-header">Vehicles Table</div>
+        <>  
+        <div className="tables-manage">
+        <h1 class="table-header">VEHICLE TABLE</h1>
             <div class="table-container">
                 <table>
                     <thead>
@@ -123,6 +125,7 @@ function VehicleTable() {
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
         </>
     )
