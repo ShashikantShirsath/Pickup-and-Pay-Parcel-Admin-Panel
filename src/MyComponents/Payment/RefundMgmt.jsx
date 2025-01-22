@@ -56,6 +56,7 @@ const RefundDashboard = () => {
           <option value="Online">Online</option>
         </select>
       </div>
+      <div className="form-table">
       <table className="refund-table">
         <thead>
           <tr>
@@ -96,6 +97,7 @@ const RefundDashboard = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

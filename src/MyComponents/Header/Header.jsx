@@ -81,8 +81,15 @@ function Header() {
                                 </li>
                             </Link>
 
-                            <Link onClick={() => handleButtonClick(5)}>
+                            <Link to="/payment" onClick={() => handleButtonClick(5)}>
                                 <li className={`side-btn ${activeIndex === 5 ? "active" : ""}`}>
+                                <i class="fa-solid fa-sync"></i>
+                                    Refaund
+                                </li>
+                            </Link>
+
+                            <Link onClick={() => handleButtonClick(6)}>
+                                <li className={`side-btn ${activeIndex === 6 ? "active" : ""}`}>
                                     <i className="fa-solid fa-right-from-bracket"></i>
                                     Logout
                                 </li>
