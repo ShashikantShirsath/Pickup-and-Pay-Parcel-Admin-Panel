@@ -5,6 +5,8 @@ import Vehicle from './MyComponents/Vehicle/Vehicle.jsx';
 import AddUser from './MyComponents/User-Table/addUser.jsx';
 import EditUser from './MyComponents/User-Table/editUser.jsx';
 import Partner from './MyComponents/Partner/Partner.jsx';
+import ParcelList from './MyComponents/ParcelManagement/parcelList.jsx'; 
+
 import RefundDashboard from './MyComponents/Payment/RefundMgmt.jsx';
 import Dashboard from './MyComponents/Dashboard/Dashboard.jsx';
 // import PickupParcelRefundForm from './MyComponents/Payment/RefundForm.jsx';
@@ -21,6 +23,9 @@ function App() {
             <Route path="/user" element={<User />} />
             <Route path='/vehicle' element={<Vehicle/>}></Route>
             <Route path='/partner' element={<Partner/>}></Route>
+
+            <Route path='/parcels' element={<ParcelList/>}></Route>
+
             <Route path='/user/addUser' element={<AddUser/>}></Route>
             <Route path='/user/editUser' element={<EditUser/>}></Route>
             <Route path='/payment' element={<RefundDashboard/>}></Route>
