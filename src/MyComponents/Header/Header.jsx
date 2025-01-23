@@ -74,22 +74,29 @@ function Header() {
                                 </li>
                             </Link>
 
-                            <Link onClick={() => handleButtonClick(4)}>
+                            <Link to="/parcels" onClick={() => handleButtonClick(4)}>
                                 <li className={`side-btn ${activeIndex === 4 ? "active" : ""}`}>
+                                    <i className="fa-solid fa-box"></i> 
+                                    Parcels
+                                </li>
+                            </Link>
+
+                            <Link onClick={() => handleButtonClick(5)}>
+                                <li className={`side-btn ${activeIndex === 5 ? "active" : ""}`}>
                                     <i className="fa-solid fa-user-large"></i>
                                     Profile
                                 </li>
                             </Link>
 
-                            <Link to="/payment" onClick={() => handleButtonClick(5)}>
-                                <li className={`side-btn ${activeIndex === 5 ? "active" : ""}`}>
+                            <Link to="/payment" onClick={() => handleButtonClick(6)}>
+                                <li className={`side-btn ${activeIndex === 6 ? "active" : ""}`}>
                                 <i class="fa-solid fa-sync"></i>
                                     Refaund
                                 </li>
                             </Link>
 
-                            <Link onClick={() => handleButtonClick(6)}>
-                                <li className={`side-btn ${activeIndex === 6 ? "active" : ""}`}>
+                            <Link onClick={() => handleButtonClick(7)}>
+                                <li className={`side-btn ${activeIndex === 7 ? "active" : ""}`}>
                                     <i className="fa-solid fa-right-from-bracket"></i>
                                     Logout
                                 </li>
