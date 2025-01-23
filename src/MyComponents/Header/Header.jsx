@@ -46,7 +46,7 @@ function Header() {
 
                     <div className="menu">
                         <ul className="myDiv">
-                            <Link onClick={() => handleButtonClick(0)}>
+                            <Link to="/dashboard" onClick={() => handleButtonClick(0)}>
                                 <li className={`side-btn ${activeIndex === 0 ? "active" : ""}`}>
                                     <i className="fa-solid fa-chart-line"></i>
                                     Dashboard

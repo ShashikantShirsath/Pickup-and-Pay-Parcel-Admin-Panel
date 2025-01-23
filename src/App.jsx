@@ -6,7 +6,8 @@ import AddUser from './MyComponents/User-Table/addUser.jsx';
 import EditUser from './MyComponents/User-Table/editUser.jsx';
 import Partner from './MyComponents/Partner/Partner.jsx';
 import RefundDashboard from './MyComponents/Payment/RefundMgmt.jsx';
-import PickupParcelRefundForm from './MyComponents/Payment/RefundForm.jsx';
+import Dashboard from './MyComponents/Dashboard/Dashboard.jsx';
+// import PickupParcelRefundForm from './MyComponents/Payment/RefundForm.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <div style={{ flex: 1, padding: '30px 10px' }}>
           <Routes>
+            <Route path='/dashboard' element={<Dashboard/>}></Route>
             <Route path="/user" element={<User />} />
             <Route path='/vehicle' element={<Vehicle/>}></Route>
             <Route path='/partner' element={<Partner/>}></Route>
