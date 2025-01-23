@@ -19,7 +19,7 @@ function App() {
       <Header />
       <div style={{ flex: 1, padding: '30px 10px' }}>
           <Routes>
-            <Route path='/dashboard' element={<Dashboard/>}></Route>
+            <Route path='/' element={<Dashboard/>}></Route>
             <Route path="/user" element={<User />} />
             <Route path='/vehicle' element={<Vehicle/>}></Route>
             <Route path='/partner' element={<Partner/>}></Route>

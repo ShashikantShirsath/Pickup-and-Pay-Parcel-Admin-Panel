@@ -27,8 +27,9 @@ const ParcelList = () => {
   };
 
   return (
+    <div className="tables-manage">
     <div className="parcel-container">
-      <h2>Parcel Management</h2>
+      <h1>PARCEL MANAGEMENT</h1>
 
       <input
         type="text"
@@ -77,6 +78,7 @@ const ParcelList = () => {
         containerClassName={"pagination"}
         activeClassName={"active"}
       />
+    </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ function UserTable() {
         <>
             <div class="add-user">
                 <Link to={"/user/addUser"}>
-                    <button class="add-btn" style={{ width: "130px" }}>Add User</button>
+                    <button class="add-btn" style={{ width: "130px"}}>Add User</button>
                 </Link>
             </div>
             <div className="tables-manage">

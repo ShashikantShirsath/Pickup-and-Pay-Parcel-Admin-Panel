@@ -35,8 +35,14 @@ function PartnerTable() {
                                 MH-18 2345
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -56,8 +62,14 @@ function PartnerTable() {
                                 MH-18 2345
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -77,8 +89,14 @@ function PartnerTable() {
                                 MH-18 2345
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -98,8 +116,14 @@ function PartnerTable() {
                                 MH-18 2345
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -119,8 +143,14 @@ function PartnerTable() {
                                 MH-18 2345
                             </td>
                             <td>
-                                <a class="edit-link">Edit</a><br/>
-                                <a class="edit-link">Delete</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">action</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">view</a>
+                                        <a href="#">edit</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>

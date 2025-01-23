@@ -42,6 +42,7 @@ const RefundDashboard = () => {
       : refundRequests.filter((request) => request.paymentMethod === filter);
 
   return (
+    <div className="tables-manage">
     <div className="dashboard-container">
       <h1>REFUND MANAGEMENT</h1>
       <div className="filter-container">
@@ -98,6 +99,7 @@ const RefundDashboard = () => {
         </tbody>
       </table>
       </div>
+    </div>
     </div>
   );
 };

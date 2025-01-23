@@ -2,9 +2,8 @@
 
 /* Container */
 .parcel-container {
-    background-color: #e0e0e0; /* Soft gray */
-    padding: 20px;
-    min-height: 100vh;
+    /* padding-top: 10px; */
+    /* min-height: 100vh; */
     text-align: center;
     font-family: 'Arial', sans-serif;
   }
@@ -17,7 +16,7 @@
     font-size: 16px;
     border: 1px solid #bbb;
     border-radius: 5px;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
   }
   
   /* Filter Buttons */
@@ -48,17 +47,18 @@
   
   /* Table */
   .parcel-table {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0 auto;
     border-collapse: collapse;
     background: #f0f0f0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .parcel-table th, .parcel-table td {
     padding: 12px;
+    background-color: white;
     border: 1px solid #bcbcbc;
     text-align: center;
     font-size: 16px;
