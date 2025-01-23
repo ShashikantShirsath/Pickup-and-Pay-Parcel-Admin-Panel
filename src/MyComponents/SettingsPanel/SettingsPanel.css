@@ -1,0 +1,170 @@
+/* General settings container */
+.settings-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar and content separation */
+.settings-content {
+  margin-left: 260px; /* Adjust for the width of the sidebar */
+  padding: 20px;
+  width: calc(100% - 260px);
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+/* Headings */
+h2, h3 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Color options */
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-button:hover {
+  transform: scale(1.2);
+}
+
+.color-button.pink {
+  background-color: #ff4081;
+}
+
+.color-button.black {
+  background-color: #000000;
+}
+
+.color-button.blue {
+  background-color: #2196f3;
+}
+
+.color-button.green {
+  background-color: #4caf50;
+}
+
+.color-button.orange {
+  background-color: #ff9800;
+}
+
+/* Type buttons */
+.type-options {
+  display: flex;
+  gap: 10px;
+}
+
+.type-button {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.type-button.active {
+  background-color: #2196f3;
+  color: #fff;
+  border-color: #2196f3;
+}
+
+.type-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Toggle switch styling */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+/* View documentation button */
+.view-docs-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-docs-button:hover {
+  background-color: #1976d2;
+}
+
+/* Light/Dark themes */
+.settings-container.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.settings-container.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
